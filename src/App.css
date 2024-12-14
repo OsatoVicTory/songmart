@@ -1,0 +1,49 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/music\ bg\ 1.jpg');
+  background-position: center;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.message-alert {
+  width: max-content;
+  height: max-content;
+  position: fixed;
+  z-index: 9999999;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease-in-out;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background-color: rgb(37, 37, 37);
+  box-shadow: 0 4px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.message-alert.false {
+  top: -50%;
+}
+.message-alert.true {
+  top: 10px;
+}
+.alert {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+.alert-icon {
+  width: 15px;
+  height: 15px;
+}
+.alert-error {
+  color: rgb(242, 55, 55);
+}
+.alert-success {
+  color: rgb(35, 175, 35);
+}
+.alert-txt {
+  margin-left: 10px;
+  font-size: 14.8px;
+  color: var(--white);
+  font-weight: 500;
+}

@@ -1,0 +1,255 @@
+.__Create__Modal__Overlay__ {
+    width: 100%;
+    height: calc(100vh - 65px);
+    position: fixed;
+    overflow: hidden;
+    z-index: 50;
+    top: 65px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create-modal-wrapper {
+    border-radius: 10px;
+    width: min(480px, 100%);
+    height: calc(100% - 40px);
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 4px 3px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+}
+.Edit-user {
+    height: 385px;
+}
+.create-song {
+    background-color: rgba(32, 32, 32, 1);
+    position: relative;
+}
+.create-song button {
+    border: 0px solid transparent;
+    outline: none;
+}
+.cs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cs-header, .cs-footer, .cs-main {
+    padding: 12px 18px;
+}
+.cs-header {
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(32, 32, 32, 1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.cs-footer {
+    position: sticky;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(32, 32, 32, 1);
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.cs-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.cs-header h3 {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-size: 18px;
+}
+.csh-btn {
+    width: max-content;
+    padding: 3px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    opacity: 0.999;
+    background-color: transparent;
+}
+.cshb-icon {
+    width: 27px;
+    height: 25px;
+    color: var(--white);
+    opacity: 0.9;
+}
+.csh-btn:hover {
+    background-color: rgba(255, 255, 255, 0.21);
+}
+.cs-main {
+    padding-top: 2px;
+}
+.csmf-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.csmf-field > label {
+    font-size: 15px;
+    color: var(--white);
+    opacity: 0.75;
+}
+.csmff-label-price {
+    display: flex;
+    align-items: center;
+}
+.csmff-label-price > div {
+    width: max-content;
+    margin-left: 5px;
+}
+.csmff-label-price .Skeleton {
+    width: 60px;
+    height: 15px;
+}
+.csmff-label-price span {
+    font-size: inherit;
+    color: inherit;
+}
+.csmfflp-btn {
+    width: max-content;
+    padding: 5px 6px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+    font-size: 14px;
+    color: var(--white);
+}
+.csmf-field input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    opacity: 1;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.csmf-field input:focus {
+    border: 1px solid var(--white);
+}
+.csmf-field input::placeholder {
+    opacity: 0.75;
+}
+input[type="file"] {
+    display: none;
+}
+.csmff-file {
+    width: 100%;
+    margin-top: 10px;
+    height: 120px;
+    position: relative;
+}
+.csmff-img, .csmff-no-file {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.csmff-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.csmffi {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    right: 1px;
+    background-color: var(--white);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.csmffi-icon {
+    width: 24px;
+    height: 24px;
+    color: rgb(18, 18, 18);
+}
+.csmff-no-file {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--white);
+    font-size: 15px;
+}
+.csmff-mp3 {
+    width: 100%;
+    height: max-content;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.csmffm-label {
+    width: max-content;
+    padding: 3px 10px;
+    padding-bottom: 5.5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.csmffm-label:hover {
+    background-color: rgba(255, 255, 255, 0.21);
+}
+.csmff-mp3 span {
+    font-size: 15px;
+    color: var(--white);
+    margin-left: 12px;
+    display: inline-block;
+    width: calc(100% - 115px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+}
+.cs-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.csf-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(40, 145, 250, 0.9);
+    padding-bottom: 11px;
+    text-transform: uppercase;
+}
+.csf-btn:hover {
+    background-color: var(--bgblue);
+}
+
+@media screen and (max-width: 500px) {
+    .create-modal-wrapper {
+        border-radius: 0px;
+        height: 100%;
+        max-height: 100%;
+    }
+    .cs-header, .cs-footer, .cs-main {
+        padding: 12px 15px;
+    }
+    .Edit-user {
+        height: 100%;
+    }
+    .Edit-user .create-song {
+        height: 100%;
+    }
+}

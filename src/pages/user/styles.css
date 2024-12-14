@@ -1,0 +1,329 @@
+.User {
+    background-color: rgba(18, 18, 18, 0.9);
+}
+/* .User.true {
+    height: calc(100vh - 65px);
+    overflow: hidden;
+} */
+ .User button {
+    border: 0px solid transparent;
+    outline: none;
+}
+.user-header {
+    position: relative;
+    height: 270px;
+    display: flex;
+    align-items: flex-end;
+}
+.user-header > div {
+    width: 100%;
+}
+.uh-cloak {
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    top: 0px;
+    right: 0px;
+    background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0.4), rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.95));
+}
+.uh-banner {
+    position: absolute;
+    z-index: 0;
+    height: 270px;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../../assets/nft\ 3.png');
+}
+.uh-txt {
+    padding: 2rem;
+    box-shadow: 0 4px 3px 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .3);
+}
+.uht {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.uht-name > div, .uht-data {
+    display: flex;
+    align-items: center;
+}
+.uht-name, .uht-data > div, .umdt {
+    display: flex;
+    flex-direction: column;
+}
+.uhtn {
+    font-size: 24px;
+    font-weight: 650;
+    color: var(--white);
+    opacity: 0.99;
+}
+.uhtn.loading {
+    width: 210px;
+    height: 20px;
+}
+.uhtn-edit {
+    width: max-content;
+    padding: 4px;
+    border-radius: 6px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    opacity: 0.99;
+}
+.uhtn-edit.uhtn.loading {
+    width: 24px;
+    height: 20px;
+}
+.uhtn-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+    opacity: 0.9;
+}
+.uhtn-edit:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.uht-join {
+    margin-top: 6px;
+    font-size: 15px;
+    color: var(--white);
+    opacity: 0.8;
+}
+.uht-join.loading {
+    width: min(180px, 100%);
+    height: 15px;
+}
+.uht-data > div:nth-child(2) {
+    margin-left: 80px;
+}
+.uhtd-value {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--white);
+    opacity: 0.99;
+}
+.uhtd-value.loading {
+    width: 90px;
+    height: 20px;
+}
+.uhtd-name {
+    margin-top: 7px;
+    font-size: 15px;
+    color: var(--white);
+    opacity: 0.93;
+}
+.uhtd-name.loading {
+    width: 90px;
+    height: 17px;
+}
+.um-main-h {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.um-main-h h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--white);
+}
+.ummh-h3 {
+    width: 210px;
+    height: 20px;
+}
+.ummh-btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding-right: 20px;
+    background-color: rgba(40, 145, 250, 0.9);
+    display: flex;
+    align-items: center;
+}
+.ummh-btn.loading {
+    padding: 0px;
+    border-radius: 0px;
+    width: 120px;
+    height: 20px;
+    background-color: transparent;
+}
+.ummh-btn:hover {
+    background-color: var(--bgblue);
+}
+.ummhb-icon {
+    width: 15px;
+    height: 15px;
+    color: var(--white);
+}
+.ummh-btn span {
+    margin-left: 6px;
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 500;
+}
+.um-ul {
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.um-li {
+    padding: 5px 8px;
+    border: 0px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.um-li.loading {
+    padding: 10px 8px;
+}
+.um-li:last-child {
+    border: none;
+}
+.um-li:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.um-li:hover {
+    background-color: transparent;
+}
+.um-div {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid transparent;
+    background: transparent;
+    outline: none;
+    text-align: left;
+}
+.umdi {
+    width: 60px;
+    height: max-content;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.umdi.loading {
+    height: 45px;
+}
+.umdi img {
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 .6px .6px 1px rgba(0, 0, 0, 0.1);
+}
+.umdi-duration {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+    background-color: transparent;
+    background-color: rgba(18, 18, 18, 0.8);
+    color: var(--white);
+    font-weight: 600;
+    padding: 4px;
+    box-shadow: 0 4px 3px 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    font-size: 11.7px;
+}
+.um-div > div {
+    display: flex;
+    align-items: center;
+}
+.um-div > div span, .um-div > span {
+    font-size: 15px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    color: var(--white);
+    padding: 0px 5px;
+}
+.uml-header {
+    font-weight: 500;
+    padding: 15px 8px;
+}
+.uml-header:hover {
+    background-color: transparent;
+}
+.umdt-date, .uml-header {
+    opacity: 0.75;
+}
+.umd-rank span {
+    font-size: 14px !important;
+}
+.umdt-streams {
+    font-weight: 500;
+}
+.um-div .loading {
+    height: 17px;
+}
+@media screen and (min-width: 700px) { 
+    .um-div {
+        display: grid;
+        grid-template-columns: 40px 100px repeat(2, calc((0.6 * (100% - 150px)) / 2)) repeat(2, calc((0.4 * (100% - 150px)) / 2));
+    }
+}
+@media screen and (max-width: 900px) { 
+    .um-div {
+        display: grid;
+        grid-template-columns: 40px 80px repeat(2, calc((0.6 * (100% - 130px)) / 2)) repeat(2, calc((0.4 * (100% - 130px)) / 2));
+    }
+    .uht-data > div:nth-child(2) {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .um-div > div span, .um-div > span {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .umdt .umdt-artiste, .umdt .umdt-streams {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .uhtn {
+        font-size: 21px;
+    }
+    .uht-join {
+        font-size: 14px;
+    }
+    .uht {
+        justify-content: unset;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .uht > div {
+        width: 100%;
+    }
+    .uht-data {
+        margin-top: 15px;
+    }
+    .uht-data > div:nth-child(2) {
+        margin-left: 50px;
+    }
+    .um-div {
+        /* grid-template-columns: 40px 70px repeat(2, calc((100% - 120px) / 2)); */
+        grid-template-columns: 40px 70px calc(100% - 210px) 90px;
+    }
+    .um-div > span {
+        display: none !important;
+    }
+    .um-div > div span, .um-div > span {
+        font-size: 13px;
+    }
+    .umdt-artiste, .umdt-streams {
+        margin-top: 6px;
+        font-size: 12.6px !important;
+    }
+}

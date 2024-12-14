@@ -1,0 +1,85 @@
+.signup-signin {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.04); */
+    background: rgba(27, 27, 27, 0.9);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.ss-wrapper {
+    width: min(100%, 450px);
+}
+.ss-container {
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 1px 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.03);
+}
+.ssc-brand-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    margin-bottom: 50px;
+}
+.ssc-brand-link img {
+    width: 40px;
+    height: 40px;
+}
+.ssc-brand-link span {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white);
+}
+.ssc-header {
+    padding: 15px;
+    padding-bottom: 9px;
+}
+.ssc-header > h3 {
+    font-size: 21px;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.ssch-login > h3 {
+    font-size: 33px !important;
+}
+.ssc-main {
+    margin: 40px 0px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ssc-login .ssc-main {
+    margin-top: 30px;
+}
+.ssc-main span {
+    margin: 0;
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+}
+.ssc-main p {
+    margin-top: 36px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--white);
+    opacity: 0.7;
+}
+.ss-container button {
+    border: 0px solid transparent;
+    outline: none;
+}
+.ss-container .cs-footer {
+    background-color: transparent;
+    margin-top: 20px;
+}

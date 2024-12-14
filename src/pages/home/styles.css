@@ -1,0 +1,214 @@
+.hc-header, .add-song {
+    display: flex;
+    align-items: center;
+}
+.h-container > div {
+    padding: 10px 20px; 
+}
+.h-container button {
+    border: 0px solid transparent;
+    outline: none;
+}
+.hc-header {
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: sticky;
+    top: 49px;
+    right: 0px;
+    z-index: 2;
+    transition: all .1s;
+}
+.l-container.scrolled .hc-header {
+    width: 100%;
+    background: rgba(18, 18, 18, 0.99);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 2px 2px 5px rgba(0, 0, 0, 0.03);
+}
+.hc-header h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--white);
+}
+.hch-h3 {
+    width: 210px;
+    height: 20px;
+}
+.add-song {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding-right: 20px;
+    background-color: rgba(40, 145, 250, 0.9);
+}
+.add-song.loading {
+    padding: 0px;
+    border-radius: 0px;
+    width: 120px;
+    height: 20px;
+    background-color: transparent;
+}
+.add-song:hover {
+    background-color: var(--bgblue);
+}
+.as-icon {
+    width: 15px;
+    height: 15px;
+    color: var(--white);
+    opacity: 0.93;
+}
+.add-song span {
+    margin-left: 10px;
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 500;
+}
+.hc-main {
+    margin-top: 0px;
+}
+.hc-ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.hc-li {
+    margin-top: 15px;
+}
+.hc-li.hcl-padding {
+    display: hidden;
+}
+.hc-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid transparent;
+    background: none;
+    text-align: left;
+    padding: 0px;
+}
+.hc-div:focus, .hc-div:active {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.hcd-top {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform .2s ease-in-out;
+    border-radius: 10px;
+}
+.hcd-top.loading {
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+.hcd-cloak {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0.08), rgba(18, 18, 18, 0.19), rgba(18, 18, 18, 0.25));
+}
+.hcd-top img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 3px 10px rgba(0, 0, 0, 0.1);
+    object-position: center;
+}
+.hc-div:hover .hcd-top {
+    transform: scale(1.02);
+}
+.hcd-txt {
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .3);
+}
+.hcd-txt > div {
+    width: 100%;
+    height: 15px;
+}
+.hcd-txt span {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .3);
+}
+.hcdt-title {
+    font-size: 15.5px;
+    color: var(--white);
+    font-weight: 550;
+}
+.hcdt-artiste {
+    margin-top: 5px;
+    font-size: 14.8px;
+    color: var(--white);
+    opacity: 0.85;
+}
+@media screen and (min-width: 900px) {
+    .hc-ul {
+        /* display: flex;
+        flex-wrap: wrap; */
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(5, calc(20% - 10px));
+    }
+    .hc-li {
+        margin-top: 15px;
+    }
+    .hcd-top {
+        width: 100%;
+    }
+    .hcd-top img {
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 900px) {
+    .hc-ul {
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, calc(25% - 10px));
+    }
+    .hcdt-title {
+        font-size: 14.2px;
+        font-weight: 500;
+    }
+    .hcdt-artiste {
+        font-size: 13.5px;
+    }
+    .hcd-top img {
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 770px) {
+    .hc-header {
+        top: 60px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hcdt-title {
+        font-size: 14px;
+    }
+    .hcdt-artiste {
+        font-size: 13.5px;
+    }
+} 
+@media screen and (max-width: 500px) {
+    .hc-ul {
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 8px));
+    }
+    .hcd-top img {
+        object-fit: cover;
+    }
+    .h-container > div {
+        padding: 10px 12px;
+    }
+}

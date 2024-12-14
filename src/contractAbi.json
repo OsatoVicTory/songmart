@@ -1,0 +1,116 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "buyer", "type": "address" },
+      { "internalType": "string", "name": "buyer_song_data", "type": "string" },
+      { "internalType": "string", "name": "update_buyer_data", "type": "string" },
+      { "internalType": "address", "name": "seller", "type": "address" },
+      { "internalType": "string", "name": "seller_song_data", "type": "string" },
+      { "internalType": "string", "name": "update_seller_data", "type": "string" },
+      { "internalType": "string", "name": "song_id", "type": "string" }
+    ],
+    "name": "buySong",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "user", "type": "address" },
+      { "internalType": "uint8", "name": "song_id", "type": "uint8" },
+      { "internalType": "string", "name": "update_song_data", "type": "string" }
+    ],
+    "name": "changePrice",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "sender", "type": "address" },
+      { "internalType": "address", "name": "receiver", "type": "address" },
+      { "internalType": "uint256", "name": "amount", "type": "uint256" },
+      { "internalType": "string", "name": "sender_activity", "type": "string" },
+      { "internalType": "string", "name": "receiver_activity", "type": "string" }
+    ],
+    "name": "sendToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "user", "type": "address" },
+      { "internalType": "string", "name": "_address", "type": "string" },
+      { "internalType": "string", "name": "data", "type": "string" },
+      { "internalType": "uint8", "name": "zero_id", "type": "uint8" },
+      { "internalType": "uint256", "name": "amount", "type": "uint256" },
+      { "internalType": "string", "name": "activity", "type": "string" }
+    ],
+    "name": "createNewuser",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "user", "type": "address" },
+      { "internalType": "string", "name": "_address", "type": "string" },
+      { "internalType": "string", "name": "data", "type": "string" },
+      { "internalType": "uint8", "name": "zero_id", "type": "uint8" }
+    ],
+    "name": "createUser",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "user_address", "type": "address" }
+    ],
+    "name": "getUser",
+    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getUsers",
+    "outputs": [
+      { "internalType": "string[]", "name": "", "type": "string[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "user_address", "type": "address" }
+    ],
+    "name": "getWallet",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "user_address", "type": "address" }
+    ],
+    "name": "getSongs",
+    "outputs": [
+      { "internalType": "string[]", "name": "", "type": "string[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "user_address", "type": "address" }
+    ],
+    "name": "getTxns",
+    "outputs": [
+      { "internalType": "string[]", "name": "", "type": "string[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

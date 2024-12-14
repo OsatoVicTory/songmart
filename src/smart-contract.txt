@@ -1,0 +1,54 @@
+// for my Structs
+// user => String: userName, totalSongs, totalSales, joinedAt, img
+// users => Array: address
+// song => String: title, artiste, audioSrc, coverSrc, duration, qty, price, ownerAddress
+// wallet => Uint256: (large number) balance of token
+// txn => String: (Received or Transfer), (From or To), amount, date
+
+
+// for frontend
+// when fetching all users songs
+// loop over all the user songs data and check if it is empty string ignore 
+// cus empty string indicate the user has sold all copies he has or minted(created) of that song
+
+//in frontend also
+// when buying song
+//  (
+        buyer: Address, buyer_song_data: String, update_buyer_data: String,
+        seller: Address (
+            or my own address for minting new song, 
+            my own address is because we want to charge users minting by the quantity so as to control it
+            cus we dont want user to mint 1 Billion copy just for free, the charge is to control the amount,
+            so my own address is more like the institution or organization address (more like when ETH gas fees goes to ETH)
+        ), 
+        seller_song_data: String (or '' for minting new song), 
+        update_seller_data: String (or '' for minting new song), 
+        song_id: String (or '' for minting new song), 
+        sender_activity: String (or 'Minted_song Created song' for minting new song), 
+        receiver_activity: String (or 'Minted_song for buyer(add buyer address)' for minting new song),  
+        amount: Uint<256, 4>
+    )
+
+// change_price is to change the price of song bought or own, u cannot change quantity
+// what could happen is that actual song creator mints new quantity of the song again
+
+
+// before using get_mut()
+// let mut seller_song_slot = seller_song_accessor.setter(id);
+// seller_song_slot.set(seller_song_data);
+// instead of element.clear() and element.push_str(&str), the below is a suggestion
+// *element = seller_song_data
+
+previous react-app-state
+
+    // "cra-template": "1.2.0",
+    // "@testing-library/jest-dom": "^5.17.0",
+    // "@testing-library/react": "^13.4.0",
+    // "@testing-library/user-event": "^13.5.0",
+    // "ethers": "^6.13.4",
+    // "react": "^19.0.0",
+    // "react-dom": "^19.0.0",
+    // "react-icons": "^5.4.0",
+    // "react-router-dom": "^7.0.2",
+    // "react-scripts": "5.0.1",
+    // "web-vitals": "^2.1.4",

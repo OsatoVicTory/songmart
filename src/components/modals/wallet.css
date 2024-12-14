@@ -1,0 +1,281 @@
+.__Wallet__Modal__Overlay {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    display: block;
+    transition: background-color .3s;
+}
+.__Wallet__Modal__Overlay.false {
+    background-color: none;
+    z-index: -1;
+}
+.__Wallet__Modal__Overlay button {
+    border: 0px solid transparent;
+    outline: none;
+}
+.wallet-modal-slider {
+    width: min(450px, 100%);
+    height: 100%;
+    overflow-y: auto;
+    padding: 0px 18px;
+    background-color: rgb(37, 37, 37);
+    transition: margin .3s;
+    margin-left: 100%;
+}
+.__Wallet__Modal__Overlay.show .wallet-modal-slider {
+    margin-left: calc(100% - 450px);
+}
+.wms-header, .wmsmf-h, .wms-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wms-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 12px 0px;
+}
+.wms-header h3 {
+    font-size: 21px;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+.wmsh-btn {
+    width: max-content;
+    padding: 4px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    opacity: 0.99;
+    background-color: transparent;
+}
+.wmsh-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+    opacity: 0.9;
+}
+.wmsh-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.wmsm-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wmsm-top h2 {
+    margin: 10px 0px;
+    margin-top: 20px;
+    padding: 0;
+    font-size: 18px;
+    color: var(--white);
+    opacity: 0.8;
+    font-weight: 600;
+}
+.wmsm-h2.loading {
+    width: 210px;
+    height: 18px;
+}
+.balance h1 {
+    font-size: 30px;
+    color: var(--white);
+    margin: 9px 0px;
+    margin-top: 0px;
+    padding: 0;
+}
+.bal-h1.loading {
+    width: 210px;
+    height: 27px;
+}
+.wms-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16.5px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.wms-btn.loading {
+    height: 18px;
+    padding: 0px;
+}
+.wms-receive {
+    background-color: rgba(40, 145, 250, 0.9);
+}
+.wms-send {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.wms-receive:hover, .wsmf-addy:hover, .wsmf-btn:hover {
+    background-color: var(--bgblue);
+}
+.wms-send:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.wmsm-base {
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+.wmsmf h3 {
+    margin: 0px;
+    padding: 0;
+    color: var(--white);
+    font-size: 18px;
+    text-align: center;
+}
+.wmsmf-h-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--white);
+    opacity: 0.8;
+}
+.wmsmf-h-icon:hover {
+    opacity: 1;
+}
+.wsmf-field {
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wsmf-field label {
+    font-size: 13.6px;
+    opacity: 0.85;
+    color: var(--white);
+}
+.wsmf-field input {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    opacity: 1;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: none;
+    outline: none;
+    border-radius: 6px;
+}
+.wsmf-field input:focus {
+    border: 1px solid var(--white);
+}
+.wsmf-send {
+    margin-top: 15px;
+}
+.wsmf-btn, .wsmf-addy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(40, 145, 250, 0.9);
+    padding-bottom: 11px;
+}
+.wsmf-addy {
+    padding-bottom: 12px;
+}
+.wsmf-addy span, .wsmf-btn span {
+    font-size: inherit;
+    line-height: 1.3rem;
+    margin-left: 12px;
+    font-weight: 480;
+    opacity: 1;
+    color: var(--white);
+}
+.wsmfa-icon, .wsmfb-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--white);
+}
+.wms-footer {
+    margin-top: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+}
+.wms-footer h3 {
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 3px;
+    color: var(--white);
+    font-size: 18px;
+}
+.wms-footer-h3.loading {
+    width: 120px;
+    height: 18px;
+}
+.wms-ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+.wms-li {
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.whl-img.loading {
+    height: 30px;
+    width: 30px;
+}
+.whl-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--white);
+    opacity: 0.9;
+}
+.whl-txt {
+    width: calc(100% - 137px);
+    padding: 0px 10px;
+}
+.whl-det {
+    width: 110px;
+}
+.wms-li > div span {
+    width: 100%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    color: var(--white);
+    font-size: 14px;
+}
+.wms-li.loading span {
+    height: 16px;
+}
+.wms-li > div span:nth-child(2) {
+    margin-top: 0px;
+    font-size: 13px !important;
+    opacity: 0.6;
+}
+.whl-amount {
+    font-weight: 500;
+}
+.whl-time {
+    opacity: 0.8;
+}
+@media screen and (max-width: 500px) {
+    .wallet-modal-slider {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .__Wallet__Modal__Overlay.show .wallet-modal-slider {
+        margin-left: 0px;
+    }
+}

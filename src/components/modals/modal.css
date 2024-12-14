@@ -1,0 +1,300 @@
+.__Modal__Overlay__ {
+    width: 100%;
+    height: calc(100% - 65px);
+    position: fixed;
+    overflow: hidden;
+    z-index: 50;
+    top: 65px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+}
+.modal-wrapper {
+    width: min(400px, 100%);
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 4px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    overflow-x: hidden;
+}
+.modal-container {
+    height: 100%;
+    background-color: rgba(32, 32, 32, 1);
+    position: relative;
+}
+.modal-container button {
+    border: 0px solid transparent;
+    outline: none;
+}
+.mw-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0px;
+    right: 0px;
+    background-image: url('../../assets/nft\ 4.png');
+    filter: blur(60px);
+    background-size: 100%;
+    object-position: center;
+}
+.mw-cloak {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0px;
+    right: 0px;
+    background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0.18), rgba(18, 18, 18, 0.3), rgba(18, 18, 18, 0.6));
+}
+.mc-header, .mcha-head, .music-durations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mc-header {
+    padding: 12px 15px;
+    position: relative;
+    z-index: 6;
+}
+.mc-song {
+    position: relative;
+    z-index: 4;
+}
+.mch-btn {
+    width: max-content;
+    padding: 3px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    opacity: 0.999;
+    background-color: transparent;
+}
+.mchb-icon {
+    width: 27px;
+    height: 25px;
+    color: var(--white);
+    opacity: 0.9;
+}
+.mch-btn.buy-btn {
+    background-color: rgba(255, 255, 255, 0.12);
+    padding: 8px 15px;
+}
+.mch-btn:hover {
+    background-color: rgba(255, 255, 255, 0.21);
+}
+.mch-btn span {
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 500;
+}
+.mch-abs {
+    width: 280px;
+    height: max-content;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 9;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+}
+.mcha > div {
+    width: 100%;
+    padding: 10px;
+}
+.mcha-head h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+.mcha-icon  {
+    width: 16px;
+    height: 16px;
+    color: var(--white);
+    opacity: 0.8;
+}
+.mcha-icon:hover {
+    opacity: 1;
+}
+.mcha-main label {
+    font-size: 14px;
+    color: var(--white);
+    opacity: 0.8;
+}
+.mcham-label-price {
+    display: flex;
+    align-items: center;
+}
+.mcham-label-price > div {
+    width: max-content;
+    margin-left: 5px;
+}
+.mcham-label-price .Skeleton {
+    width: 60px;
+    height: 15px;
+}
+.mchamlp-btn {
+    width: max-content;
+    padding: 5px 6px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+    font-size: 14px;
+    color: var(--white);
+}
+.mcham-label-price span {
+    font-size: inherit;
+    color: inherit;
+}
+.mcha-main input {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    opacity: 1;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: none;
+    outline: none;
+    border-radius: 6px;
+}
+.mcha-main input:focus {
+    border: 1px solid var(--white);
+}
+.mcha-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(40, 145, 250, 0.9);
+    padding-bottom: 11px;
+}
+.mcha-btn:hover {
+    background-color: var(--bgblue);
+}
+.mc-song-cover {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.mc-song-cover img {
+    max-width: 93%;
+    max-height: 270px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.mc-main {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.mc-main .hide_scrollbar {
+    width: 100%;
+    overflow-x: auto;
+}
+.song-title {
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--white);
+}
+.mc-main .hide_scrollbar:nth-child(2) {
+    margin-top: 3px;
+}
+.song-artiste {
+    font-size: 15px;
+    color: var(--white);
+    opacity: 0.8;
+}
+.music-player {
+    margin: 20px 0px;
+}
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+.slider:active::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+}
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(var(--white), var(--white));
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 0px 5px;
+}
+.music-durations {
+    margin-top: 6px;
+}
+.music-durations span {
+    font-size: 13.2px;
+    opacity: 0.7;
+    color: var(--white);
+}
+.controls, .ctrl-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls {
+    margin-top: 0px;
+}
+.controls > div {
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+.ctrl-btn {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.ctrl-btn.pointer {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+.ctrl-btn.pointer:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.ctrl-btn .pp-icon {
+    width: 33px;
+    height: 33px;
+    color: var(--white);
+}
+.pause-play {
+    background-color: var(--white) !important;
+    opacity: 0.9;
+    width: 80px;
+    height: 80px;
+    margin: 0px 40px;
+}
+.pause-play .pp-icon {
+    width: 40px;
+    height: 40px;
+    color: rgba(18, 18, 18, 0.9);
+}
+.pause-play:hover {
+    background-color: var(--white) !important;
+    opacity: 1;
+}
