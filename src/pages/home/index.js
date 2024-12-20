@@ -61,7 +61,7 @@ const Home = () => {
 
                 <div className="h-container w-full">
                     <div className="hc-header w-full">
-                        <h3>All Songs</h3>
+                        <h3>All Artistes</h3>
                         <button className="add-song pointer" onClick={() => handleModal(true)}>
                             <FaPlus className='as-icon' />
                             <span>Add Song</span>

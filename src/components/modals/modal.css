@@ -34,7 +34,7 @@
     z-index: 0;
     top: 0px;
     right: 0px;
-    background-image: url('../../assets/nft\ 4.png');
+    /* background-image: url('../../assets/nft\ 4.png'); */
     filter: blur(60px);
     background-size: 100%;
     object-position: center;

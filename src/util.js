@@ -4,12 +4,6 @@ import { Contract, ethers } from "ethers";
 import abi from './contractAbi.json';
 import { contractAddress, SERVER_URL } from "./config";
 
-import img1 from './assets/music 1.jpg';
-import img2 from './assets/music 2.jpg';
-import img3 from './assets/music 3.jpg';
-import img4 from './assets/nft 3.png';
-import img5 from './assets/nft 4.png';
-
 export const shortenAddy = (addy) => {
     return addy.slice(0, 4) + '...' + addy.slice(-4);
 };
@@ -72,7 +66,7 @@ export const subtractBigDecimals = (value, amt) => {
     return result;
 };
 
-const imgs = [img1, img2, img3, img4, img5];
+const imgs = [];
 
 export const songs = Array(10).fill(0).map((v, i) => {
     return {

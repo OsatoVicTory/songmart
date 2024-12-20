@@ -1,12 +1,12 @@
 import { AiOutlineClose } from 'react-icons/ai';
-import { GiTakeMyMoney } from 'react-icons/gi';
+// import { GiTakeMyMoney } from 'react-icons/gi';
 import './modal.css';
 import { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { IoMdPlay } from 'react-icons/io';
 import { IoPauseSharp } from 'react-icons/io5';
-import img from '../../assets/nft 4.png';
+// import img from '../../assets/nft 4.png';
 import { MdSkipNext, MdSkipPrevious } from 'react-icons/md';
-import mp from '../../assets/song.mp3';
+// import mp from '../../assets/song.mp3';
 import { AppContext } from '../../context';
 import { createContractInstance, getTokenAmount, multiplyBigDecimals, parseBigInt, parseStringData, setMessageFn } from '../../util';
 import { tokenSymbol } from '../../config';

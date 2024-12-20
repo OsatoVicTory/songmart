@@ -127,7 +127,7 @@ const CreateSong = ({ closeModal, addSong }) => {
                 formData.append('filename', coverFile.name);
                 formData.append('file_type', 'image');
 
-                // cover = (await sendFile(formData)).data.data.secure_url;
+                cover = (await sendFile(formData)).data.data.secure_url;
             }
 
             {
@@ -137,12 +137,15 @@ const CreateSong = ({ closeModal, addSong }) => {
                 formData_.append('file_type', 'audio');
                 formData_.append('resource_type', 'video'); // resource_type should be video for audio for cloudinary use
 
-                // mp3 = (await sendFile(formData_)).data.data.secure_url;
+                mp3 = (await sendFile(formData_)).data.data.secure_url;
             }
-            // console.log('backend-res', cover, mp3);
+            
+            // 'https://res.cloudinary.com/osatocloud9/image/upload/v1734174286/voting-hackathon/contents/tap3kjrkr8vyrqdkeacw.jpg'
+            // 'https://res.cloudinary.com/osatocloud9/video/upload/v1734174301/voting-hackathon/contents/lhnk7n1emy2qsuvblclt.mp3' 
 
-            const coverSrc = 'https://res.cloudinary.com/osatocloud9/image/upload/v1734174286/voting-hackathon/contents/tap3kjrkr8vyrqdkeacw.jpg' //cover; // add link from ipfs uplaod
-            const audioSrc = 'https://res.cloudinary.com/osatocloud9/video/upload/v1734174301/voting-hackathon/contents/lhnk7n1emy2qsuvblclt.mp3' //mp3; //add link from ipfs upload
+
+            const coverSrc = cover; // add link from ipfs uplaod
+            const audioSrc = mp3; //add link from ipfs upload
             const date = new Date().getTime();
 
             const data = (
@@ -161,7 +164,7 @@ const CreateSong = ({ closeModal, addSong }) => {
             }
 
             const bigIntAmount = parseBigInt(multiplyBigDecimals(amount));
-            console.log('bigIntAmount', bigIntAmount);
+            // console.log('bigIntAmount', bigIntAmount);
 
             const tx = await contractInstance.buySong(
                 contract.address, data, acct_data, adminAddress, '', '', ''
@@ -189,7 +192,7 @@ const CreateSong = ({ closeModal, addSong }) => {
             creating.current = false;
             closeModal();
         } catch(err) {
-            console.log(err);
+            // console.log(err);
             setLoading(false);
             creating.current = false;
             setMessageFn(setMessage, { status: 'error', message: 'There was an error. Please try again.' });
