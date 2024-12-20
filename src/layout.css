@@ -46,8 +46,9 @@
 }
 .brand-link img {
     width: 33px;
-    height: 33px;
+    height: 30px;
     object-fit: cover;
+    border-radius: 2px;
 }
 .brand-link span {
     font-size: 22px;

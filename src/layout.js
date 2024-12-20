@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import { MdAccountBalanceWallet } from 'react-icons/md';
 import { AiOutlineSearch, AiOutlineClose } from 'react-icons/ai';
 import './layout.css';
@@ -9,6 +9,7 @@ import { AppContext } from "./context";
 import NoWallet from "./components/no-wallet";
 import { createContractInstance, getTokenAmount, parseStringData, setMessageFn, shortenAddy } from "./util";
 import { BrowserProvider } from "ethers";
+import { logo } from "./config";
 
 const Layout = ({ children }) => {
 

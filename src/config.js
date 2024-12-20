@@ -1,4 +1,4 @@
-import logo_img from './logo.svg';
+import logo_img from './assets/logo.jpg';
 
 export const contractAddress = "0x197fa4c6b4fc0732fdab76063b598f937dc980b8";
 
